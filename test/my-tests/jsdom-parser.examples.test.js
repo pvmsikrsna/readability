@@ -2,7 +2,7 @@
 const { expect } = require('chai');
 const JSDOMParser = require('../../JSDOMParser');
 
-describe('JSDOMParser usage example', () => {
+describe('JSDOMParser LightWeight Parser for WebWorkers', () => {
     test('should parse HTML and find links', () => {
         const html = '<div><a href="/foo">Foo</a></div>';
         const doc = new JSDOMParser().parse(html);
