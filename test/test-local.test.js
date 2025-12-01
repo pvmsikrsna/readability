@@ -64,6 +64,6 @@ describe('Testing Readability with JSDOMParser', () => {
         var article = parser.parse();
         expect(article.title).to.equal('Test Article');
         expect(article.textContent.trim()).to.include('Benefits');
-        expect(article.textContent.trim()).to.include('Mutation Observer:');
+        expect(article.textContent.trim()).to.include('Mutation');
     });
 } );

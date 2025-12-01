@@ -6,8 +6,11 @@
   "types": "index.d.ts",
   "scripts": {
     "lint": "eslint . && prettier Readability.js JSDOMParser.js test/*.js --check",
-    "test": "mocha test/test-*.js",
+    "test-mocha": "mocha test/test-*.js",
+    "test-jest": "jest",
+    "test": "jest",
     "debug": "mocha test/test-local.test.js",
+    "debug-test1": "mocha test/my-tests/Readability_01.test.js",
     "generate-testcase": "node test/generate-testcase.js",
     "release": "release-it"
   },
@@ -31,6 +34,7 @@
     "eslint-plugin-mozilla": "^3.7.4",
     "eslint-plugin-no-unsanitized": "^4.0.2",
     "htmltidy2": "1.0.0",
+    "jest": "^30.2.0",
     "js-beautify": "1.14.7",
     "jsdom": "20.0.2",
     "mocha": "10.8.2",
